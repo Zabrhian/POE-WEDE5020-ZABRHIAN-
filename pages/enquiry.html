@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Tkayys Photography</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a class="brand" href="index.html">Tkayys Photography</a>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./services.html">Services</a>
+                <a href="./enquiry.html">Enquiry</a>
+                <a href="./contactus.html">Contact Us</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <h2>Make an Enquiry</h2>
+
+        <p>
+            Interested in booking a photography session?
+            Complete the form below and tell us about your requirements.
+        </p>
+
+        <!-- Added ID here -->
+        <form id="enquiry-form">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="service">Photography Service:</label>
+            <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="portrait">Portrait Photography</option>
+                <option value="event">Event Photography</option>
+                <option value="creative">Creative Photography</option>
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+
+        </form>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+
+            <div class="footer-column">
+                <h3>Tkayys Photography</h3>
+                <p>Capturing life's most meaningful moments through professional photography.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <a href="services.html">Portrait Photography</a>
+                <a href="services.html">Event Photography</a>
+                <a href="services.html">Creative Photography</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contactus.html">Contact Us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Connect With Us</h3>
+                <a href="mailto:tkayysphotography12@gmail.com">✉ Email</a>
+                <a href="tel:+27726953916">☎ +27 72 695 3916</a>
+                <a href="https://www.instagram.com/tkayysphotography12/" target="_blank"> Instagram</a>
+                <a href="https://www.facebook.com/djtkayy12" target="_blank"> Facebook</a>
+                <a href="https://wa.me/27726953916" target="_blank"> WhatsApp</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tkayys Photography. All rights reserved.</p>
+        </div>
+    </footer>   
+
+    <!-- EmailJS SDK and scripts loaded in correct order -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="../javascript/main.js"></script>
+    <script src="../javascript/lightbox.js"></script>
+    <script src="../javascript/validation.js"></script>
+</body>
+</html>
